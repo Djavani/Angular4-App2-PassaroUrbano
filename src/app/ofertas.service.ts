@@ -13,7 +13,7 @@ export class OfertasService {
 
   public getOfertas(): Promise<Oferta[]>{    
     //efetuar uma requisicao http 
-    return this.http.get('http://localhost:3000/ofertas')
+    return this.http.get('http://localhost:3000/ofertas?destaque=true')
       .toPromise()
       .then((resposta: any) => resposta.json())
       //retonar um promise Oferta[]
