@@ -13,7 +13,7 @@ export class OfertaComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('ID recuperado da rota:' + this.route.snapshot.params['id']);
+    console.log('ID recuperado da rota:' + this.route.snapshot.params['id'])
   }
 
 }
