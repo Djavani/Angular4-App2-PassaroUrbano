@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-topo',
   templateUrl: './topo.component.html',
@@ -12,4 +13,7 @@ export class TopoComponent implements OnInit {
   ngOnInit() {
   }
 
+  public pesquisa(event: Event): void{
+    console.log((<HTMLInputElement>event.target).value)
+  }
 }
