@@ -11,8 +11,7 @@ import { OfertasService } from '../ofertas.service';
 })
 export class RestaurantesComponent implements OnInit {
 
-  public ofertas: Oferta[]
-  public dataTeste: any = new Date(2017, 10, 17)
+  public ofertas: Oferta[]  
 
   constructor(private ofertaService: OfertasService) { }
 
