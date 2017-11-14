@@ -7,7 +7,7 @@ import { Oferta } from './../shared/oferta.model';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers:[  OfertasService ]
+  providers: [  OfertasService ]
 })
 export class HomeComponent implements OnInit {
 
@@ -15,15 +15,14 @@ export class HomeComponent implements OnInit {
 
   constructor(private ofertasService: OfertasService) { }
 
-  ngOnInit() {   
+  ngOnInit() {
    this.ofertasService.getOfertas()
-    .then((ofertas: Oferta[]) => {       
-      this.ofertas = ofertas 
+    .then((ofertas: Oferta[]) => {
+      this.ofertas = ofertas
     })
-    .catch((param: any ) => { 
-      console.log(param) 
+    .catch((param: any ) => {
     })
-    
+
   }
 
 }
