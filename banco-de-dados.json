@@ -192,6 +192,41 @@
       "complemento": "casa 2",
       "formaPagamento": "debito",
       "id": 1
+    },
+    {
+      "endereco": "Rua Teste",
+      "numero": "5",
+      "complemento": "Fundos da rua",
+      "formaPagamento": "dinheiro",
+      "id": 2
+    },
+    {
+      "endereco": "aaaaaa",
+      "numero": "aa",
+      "complemento": "aaa",
+      "formaPagamento": "debito",
+      "id": 3
+    },
+    {
+      "endereco": "Rua ABC",
+      "numero": "150",
+      "complemento": "Ap 300",
+      "formaPagamento": "dinheiro",
+      "id": 4
+    },
+    {
+      "endereco": "RUa Teste",
+      "numero": "206",
+      "complemento": "Fundos",
+      "formaPagamento": "debito",
+      "id": 5
+    },
+    {
+      "endereco": "Rua Carlos Chagas",
+      "numero": "300",
+      "complemento": "201",
+      "formaPagamento": "dinheiro",
+      "id": 6
     }
   ]
 }
