@@ -233,6 +233,12 @@
       "numero": "240",
       "complemento": "Final da Rua",
       "id": 7
+    },
+    {
+      "endereco": "Rua Padre Café",
+      "numero": "202",
+      "complemento": "Ao 201",
+      "id": 8
     }
   ]
 }
