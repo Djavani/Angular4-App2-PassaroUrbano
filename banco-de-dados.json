@@ -239,6 +239,13 @@
       "numero": "202",
       "complemento": "Ao 201",
       "id": 8
+    },
+    {
+      "endereco": "Rua Silvio Geraldo França",
+      "numero": "207",
+      "complemento": "Sobado",
+      "formaPagamento": "debito",
+      "id": 9
     }
   ]
 }
