@@ -246,6 +246,13 @@
       "complemento": "Sobado",
       "formaPagamento": "debito",
       "id": 9
+    },
+    {
+      "endereco": "Rua Deusval Ferreira Costa",
+      "numero": "240",
+      "complemento": "Final da rua",
+      "formaPagamento": "dinheiro",
+      "id": 10
     }
   ]
 }
