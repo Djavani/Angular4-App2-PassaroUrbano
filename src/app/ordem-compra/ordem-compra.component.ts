@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OrdemCompraService } from '../ordem-compra.service'
 import { Pedido } from '../shared/pedido.model'
-import { FormGroup } from '@angular/forms/src/model';
+import { FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 
 @Component({
