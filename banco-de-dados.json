@@ -227,6 +227,12 @@
       "complemento": "201",
       "formaPagamento": "dinheiro",
       "id": 6
+    },
+    {
+      "endereco": "Rua José Gerardo",
+      "numero": "240",
+      "complemento": "Final da Rua",
+      "id": 7
     }
   ]
 }

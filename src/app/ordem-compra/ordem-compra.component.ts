@@ -16,10 +16,20 @@ export class OrdemCompraComponent implements OnInit {
   constructor(private ordemCompraService: OrdemCompraService) { }
 
   ngOnInit() {
-    
+
   }
 
-  public confirmarCompra() : void {
-    console.log(this.f)
+  public confirmarCompra(): void {
+    let pedido: Pedido = new Pedido(
+      this.f.value.endereco,
+      this.f.value.numero,
+      this.f.value.complemento,
+      this.f.value.formPagamento
+    )
+
+    this.ordemCompraService.efetivarCompra(pedido)
+      .subscribe((idPedido: number) =>{
+        console.log('Pedido cadastrado com sucesso! ID do pedido:' + idPedido)
+      })
   }
 }
