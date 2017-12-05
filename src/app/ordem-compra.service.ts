@@ -8,9 +8,9 @@ import { URL_API } from './app.api';
 @Injectable()
 export class OrdemCompraService {
 
-  constructor(private http: Http){}
+  constructor(private http: Http) {}
 
-  public efetivarCompra(pedido: Pedido) : Observable<any> {
+  public efetivarCompra(pedido: Pedido): Observable<any> {
     let headers: Headers = new Headers()
 
     headers.append('Content-type', 'application/json')
