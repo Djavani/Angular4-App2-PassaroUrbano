@@ -242,6 +242,25 @@
         }
       ],
       "id": 5
+    },
+    {
+      "endereco": "Rua do Nelson",
+      "numero": "300",
+      "complemento": "Fundos",
+      "formaPagamento": "debito",
+      "itens": [
+        {
+          "id": 5,
+          "img": {
+            "url": "/assets/ofertas/5/img1.jpg"
+          },
+          "titulo": "Kart",
+          "descricao_oferta": "Bateria de Kart de 30 minutos.",
+          "valor": 54.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 6
     }
   ]
 }
