@@ -4,6 +4,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { CarrinhoService } from '../carrinho.service'
 
 import { Pedido } from '../shared/pedido.model'
+import { ItemCarrinho } from 'app/shared/item-carrinho.model';
 
 @Component({
   selector: 'app-ordem-compra',
@@ -14,6 +15,7 @@ import { Pedido } from '../shared/pedido.model'
 export class OrdemCompraComponent implements OnInit {
 
   public idPedidoCompra: number
+  public itensCarrinho: ItemCarrinho[] = []
 
   public formulario:  FormGroup = new FormGroup({
     'endereco': new FormControl(null, [ Validators.required, Validators.minLength(3), Validators.maxLength(120) ]),
@@ -28,8 +30,8 @@ export class OrdemCompraComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log('OrdemCompra - Array de itens do carrinho', this.carrinhoService.exibirItens())
-
+    this.itensCarrinho = this.carrinhoService.exibirItens()
+    console.log(this.itensCarrinho)
   }
 
   public confirmarCompra(): void {
