@@ -17,8 +17,15 @@ class CarrinhoService {
             oferta.valor,
             1
         )
+        // verificar se o item ja existe em this.itens
+        let itemCarrinhoEncontrado = this.itens.find((item: ItemCarrinho) => item.id === itemCarrinho.id)
 
-        this.itens.push(itemCarrinho)
+        if (itemCarrinhoEncontrado) {
+            itemCarrinhoEncontrado.quantidade += 1
+        } else {
+            this.itens.push(itemCarrinho)
+        }
+
     }
 }
 
